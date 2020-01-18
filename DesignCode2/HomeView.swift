@@ -74,3 +74,15 @@ struct SectionView: View {
         .shadow(color: Color("card1").opacity(0.25), radius: 20, x: 0, y: 20)
     }
 }
+
+
+// Data Model
+
+struct Section: Identifiable {
+    var id = UUID()
+    var title: String
+    var text: String
+    var logo: String
+    var image: Image
+    var color: Color
+}
