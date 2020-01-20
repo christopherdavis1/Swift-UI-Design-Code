@@ -10,7 +10,7 @@ import SwiftUI
 
 struct UpdateDetail: View {
     
-    var update: Update = updateData[2]
+    var update: Update = updateData[0]
     
     var body: some View {
         List {
