@@ -19,10 +19,11 @@
 		83B93D2423D62D360098B3D1 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B93D2323D62D360098B3D1 /* UpdateList.swift */; };
 		83B93D2623D636130098B3D1 /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B93D2523D636130098B3D1 /* UpdateDetail.swift */; };
 		83B93D2823D639320098B3D1 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B93D2723D639320098B3D1 /* UpdateStore.swift */; };
+		83B93D2A23D63E020098B3D1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B93D2923D63E020098B3D1 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		831B8D5623CFE511005A9CB9 /* DesignCode2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		831B8D5623CFE511005A9CB9 /* Design+Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Design+Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		831B8D5923CFE511005A9CB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		831B8D5B23CFE511005A9CB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		831B8D5D23CFE511005A9CB9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		83B93D2323D62D360098B3D1 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
 		83B93D2523D636130098B3D1 /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
 		83B93D2723D639320098B3D1 /* UpdateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStore.swift; sourceTree = "<group>"; };
+		83B93D2923D63E020098B3D1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,7 @@
 		831B8D5723CFE511005A9CB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				831B8D5623CFE511005A9CB9 /* DesignCode2.app */,
+				831B8D5623CFE511005A9CB9 /* Design+Code.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +79,7 @@
 				83B93D2323D62D360098B3D1 /* UpdateList.swift */,
 				83B93D2523D636130098B3D1 /* UpdateDetail.swift */,
 				83B93D2723D639320098B3D1 /* UpdateStore.swift */,
+				83B93D2923D63E020098B3D1 /* TabBar.swift */,
 				831B8D5F23CFE512005A9CB9 /* Assets.xcassets */,
 				831B8D6423CFE512005A9CB9 /* LaunchScreen.storyboard */,
 				831B8D6723CFE512005A9CB9 /* Info.plist */,
@@ -110,7 +113,7 @@
 			);
 			name = DesignCode2;
 			productName = DesignCode2;
-			productReference = 831B8D5623CFE511005A9CB9 /* DesignCode2.app */;
+			productReference = 831B8D5623CFE511005A9CB9 /* Design+Code.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -173,6 +176,7 @@
 				83B93D2223D3AA530098B3D1 /* HomeView.swift in Sources */,
 				831B8D5C23CFE511005A9CB9 /* SceneDelegate.swift in Sources */,
 				831B8D5E23CFE511005A9CB9 /* ContentView.swift in Sources */,
+				83B93D2A23D63E020098B3D1 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.designCode.DesignCode2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Design+Code";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,7 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.designCode.DesignCode2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Design+Code";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
