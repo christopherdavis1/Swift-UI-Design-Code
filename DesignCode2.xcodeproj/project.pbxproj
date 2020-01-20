@@ -17,6 +17,7 @@
 		83B93D2023D3A2DD0098B3D1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B93D1F23D3A2DD0098B3D1 /* Home.swift */; };
 		83B93D2223D3AA530098B3D1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B93D2123D3AA530098B3D1 /* HomeView.swift */; };
 		83B93D2423D62D360098B3D1 /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B93D2323D62D360098B3D1 /* UpdateList.swift */; };
+		83B93D2623D636130098B3D1 /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B93D2523D636130098B3D1 /* UpdateDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		83B93D1F23D3A2DD0098B3D1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		83B93D2123D3AA530098B3D1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		83B93D2323D62D360098B3D1 /* UpdateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateList.swift; sourceTree = "<group>"; };
+		83B93D2523D636130098B3D1 /* UpdateDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				83B93D2123D3AA530098B3D1 /* HomeView.swift */,
 				831B8D6D23D00A95005A9CB9 /* MenuView.swift */,
 				83B93D2323D62D360098B3D1 /* UpdateList.swift */,
+				83B93D2523D636130098B3D1 /* UpdateDetail.swift */,
 				831B8D5F23CFE512005A9CB9 /* Assets.xcassets */,
 				831B8D6423CFE512005A9CB9 /* LaunchScreen.storyboard */,
 				831B8D6723CFE512005A9CB9 /* Info.plist */,
@@ -161,6 +164,7 @@
 				831B8D5A23CFE511005A9CB9 /* AppDelegate.swift in Sources */,
 				83B93D2423D62D360098B3D1 /* UpdateList.swift in Sources */,
 				831B8D6E23D00A95005A9CB9 /* MenuView.swift in Sources */,
+				83B93D2623D636130098B3D1 /* UpdateDetail.swift in Sources */,
 				83B93D2023D3A2DD0098B3D1 /* Home.swift in Sources */,
 				83B93D2223D3AA530098B3D1 /* HomeView.swift in Sources */,
 				831B8D5C23CFE511005A9CB9 /* SceneDelegate.swift in Sources */,
