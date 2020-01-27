@@ -83,38 +83,38 @@ struct ContentView: View {
                 }
             )
             
-//            Text for seeing the location of the bottom card
-//            Text("\(bottomState.height)")
-//                .offset(y: -300)
+            //            Text for seeing the location of the bottom card
+            //            Text("\(bottomState.height)")
+            //                .offset(y: -300)
             
             
-            BottomCardView()
+            BottomCardView(show: $showCard)
                 .offset(x: 0, y: showCard ? 360 : 1000)
                 .offset(y: bottomState.height)
                 .blur(radius: show ? 20 : 0)
                 .animation(.timingCurve(0.2, 0.8, 0.2, 1, duration: 0.8))
-            .gesture(
-                DragGesture().onChanged { value in
-                    self.bottomState = value.translation
-                    if self.showFull {
-                        self.bottomState.height += -300
+                .gesture(
+                    DragGesture().onChanged { value in
+                        self.bottomState = value.translation
+                        if self.showFull {
+                            self.bottomState.height += -300
+                        }
+                        if self.bottomState.height < -300 {
+                            self.bottomState.height = -300
+                        }
                     }
-                    if self.bottomState.height < -300 {
-                        self.bottomState.height = -300
-                    }
-                }
-                .onEnded { value in
-                    if self.bottomState.height > 115 {
-                        self.showCard = false
-                    }
-                    if (self.bottomState.height < -100 && !self.showFull) || (self.bottomState.height < -250 && self.showFull) {
+                    .onEnded { value in
+                        if self.bottomState.height > 115 {
+                            self.showCard = false
+                        }
+                        if (self.bottomState.height < -100 && !self.showFull) || (self.bottomState.height < -250 && self.showFull) {
                             self.bottomState.height = -300
                             self.showFull = true
-                    } else {
-                        self.bottomState = .zero
-                        self.showFull = false
+                        } else {
+                            self.bottomState = .zero
+                            self.showFull = false
+                        }
                     }
-                }
             )
         }
     }
@@ -184,6 +184,9 @@ struct TitleView: View {
 }
 
 struct BottomCardView: View {
+    
+    @Binding var show: Bool
+    
     var body: some View {
         VStack(spacing: 20) {
             Rectangle()
@@ -195,6 +198,23 @@ struct BottomCardView: View {
                 .multilineTextAlignment(.center)
                 .lineSpacing(4)
                 .font(.subheadline)
+            
+            HStack(spacing: 20.0) {
+                RingView(color1: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), color2: #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), width: 88, height: 88, percent: 78, show: $show)
+                    .animation(Animation.easeInOut.delay(0.3))
+                
+                VStack(alignment: .leading, spacing: 8.0) {
+                    Text("SwiftUI").fontWeight(.bold)
+                    Text("12 of 12 sections completed.\n 10 hours spent so far.")
+                        .font(.footnote)
+                        .foregroundColor(.gray)
+                        .lineSpacing(4)
+                }
+                .padding(20)
+                .background(Color.white)
+                .cornerRadius(20)
+                .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 10)
+            }
             
             Spacer()
         }
