@@ -22,6 +22,12 @@ struct TabBar: View {
                 Image(systemName: "rectangle.stack.fill")
                 Text("Certificates")
             })
+            
+            UpdateList()
+            .tabItem({
+                Image(systemName: "bell.fill")
+                Text("Updates")
+            })
         }
         .edgesIgnoringSafeArea(.top)
     }
