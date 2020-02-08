@@ -36,6 +36,7 @@
 		83D92A6023EF343500AA3A5F /* CourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D92A5F23EF343500AA3A5F /* CourseDetail.swift */; };
 		83D92A6223EF393B00AA3A5F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D92A6123EF393B00AA3A5F /* Data.swift */; };
 		83D92A6423EF3B1600AA3A5F /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D92A6323EF3B1600AA3A5F /* PostList.swift */; };
+		83D92A6623EF3DD200AA3A5F /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D92A6523EF3DD200AA3A5F /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		83D92A5F23EF343500AA3A5F /* CourseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetail.swift; sourceTree = "<group>"; };
 		83D92A6123EF393B00AA3A5F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		83D92A6323EF3B1600AA3A5F /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
+		83D92A6523EF3DD200AA3A5F /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				83B93D2523D636130098B3D1 /* UpdateDetail.swift */,
 				83B93D2723D639320098B3D1 /* UpdateStore.swift */,
 				83D92A6123EF393B00AA3A5F /* Data.swift */,
+				83D92A6523EF3DD200AA3A5F /* DataStore.swift */,
 				83D92A6323EF3B1600AA3A5F /* PostList.swift */,
 				83B93D2923D63E020098B3D1 /* TabBar.swift */,
 				831B8D5F23CFE512005A9CB9 /* Assets.xcassets */,
@@ -235,6 +238,7 @@
 			files = (
 				831B8D5A23CFE511005A9CB9 /* AppDelegate.swift in Sources */,
 				83D92A6223EF393B00AA3A5F /* Data.swift in Sources */,
+				83D92A6623EF3DD200AA3A5F /* DataStore.swift in Sources */,
 				83B93D2823D639320098B3D1 /* UpdateStore.swift in Sources */,
 				83B93D2423D62D360098B3D1 /* UpdateList.swift in Sources */,
 				831B8D6E23D00A95005A9CB9 /* MenuView.swift in Sources */,
