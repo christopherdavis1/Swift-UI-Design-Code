@@ -17,10 +17,10 @@ struct TabBar: View {
                     Text("Home")
                 })
             
-            ContentView()
+            CourseList()
             .tabItem({
                 Image(systemName: "rectangle.stack.fill")
-                Text("Certificates")
+                Text("Courses")
             })
             
             UpdateList()
