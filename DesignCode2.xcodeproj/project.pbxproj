@@ -33,6 +33,7 @@
 		83B93D2623D636130098B3D1 /* UpdateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B93D2523D636130098B3D1 /* UpdateDetail.swift */; };
 		83B93D2823D639320098B3D1 /* UpdateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B93D2723D639320098B3D1 /* UpdateStore.swift */; };
 		83B93D2A23D63E020098B3D1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B93D2923D63E020098B3D1 /* TabBar.swift */; };
+		83C288BD23EF49D30043376C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 83C288BC23EF49D30043376C /* SDWebImageSwiftUI */; };
 		83D92A6023EF343500AA3A5F /* CourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D92A5F23EF343500AA3A5F /* CourseDetail.swift */; };
 		83D92A6223EF393B00AA3A5F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D92A6123EF393B00AA3A5F /* Data.swift */; };
 		83D92A6423EF3B1600AA3A5F /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D92A6323EF3B1600AA3A5F /* PostList.swift */; };
@@ -82,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C288BD23EF49D30043376C /* SDWebImageSwiftUI in Frameworks */,
 				83D92A6923EF413F00AA3A5F /* Contentful in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +180,7 @@
 			name = DesignCode2;
 			packageProductDependencies = (
 				83D92A6823EF413F00AA3A5F /* Contentful */,
+				83C288BC23EF49D30043376C /* SDWebImageSwiftUI */,
 			);
 			productName = DesignCode2;
 			productReference = 831B8D5623CFE511005A9CB9 /* Design+Code.app */;
@@ -209,6 +212,7 @@
 			mainGroup = 831B8D4D23CFE511005A9CB9;
 			packageReferences = (
 				83D92A6723EF413F00AA3A5F /* XCRemoteSwiftPackageReference "contentful.swift" */,
+				83C288BB23EF49D30043376C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 831B8D5723CFE511005A9CB9 /* Products */;
 			projectDirPath = "";
@@ -460,6 +464,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		83C288BB23EF49D30043376C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.3;
+			};
+		};
 		83D92A6723EF413F00AA3A5F /* XCRemoteSwiftPackageReference "contentful.swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/contentful/contentful.swift.git";
@@ -471,6 +483,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		83C288BC23EF49D30043376C /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83C288BB23EF49D30043376C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		83D92A6823EF413F00AA3A5F /* Contentful */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 83D92A6723EF413F00AA3A5F /* XCRemoteSwiftPackageReference "contentful.swift" */;
